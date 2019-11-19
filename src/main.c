@@ -14,11 +14,6 @@ unsigned char *m;
 char p[] = { ' ', 'O', 'X', '_' };
 // Mark characters
 
-#define NONE 0
-#define SAFE 1
-#define MINE 2
-#define QUERY 3
-
 #define M(x, y) m[(x)*col+(y)]
 #define IS_MINE(x, y) (M(x, y)&1)
 #define IS_VISI(x, y) (M(x, y)&2)
